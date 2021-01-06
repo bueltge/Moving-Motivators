@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Moving Motivators</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="description" content="Moving Motivators is an exercise meant to help us reflect on motivation and how it affects organizational change.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<style>
+		body {
+		  background: #86B85D;
+		}
+		.column {
+			width: 170px;
+			min-height: 180px;
+			float: left;
+			padding: 5px 5px 50px 5px;
+			margin: 0 5px 5px 0;
+			border: 1px dotted #ccc;
+			border-radius: 5px;
+			background: #f4f4f4;
+		}
+		.portlet {
+			min-height: 170px;
+			padding: 0.3em;
+			margin-bottom: 1em;
+			border-color: #ccc;
+			box-shadow: 3px 3px 3px #ccc;
+		}
+		.portlet-header {
+			padding: 2px 0 0 2.px;
+			position: relative;
+			background: #ccc;
+			border: 1px solid #ccc;
+			font-weight: normal;
+			cursor: all-scroll;
+		}			
+		.portlet-toggle {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			margin-top: -8px;
+		}
+		.portlet-content {
+			padding: 0.4em;
+			font-weight: 100;
+			font-size: 90%;
+		}
+		.portlet-placeholder {
+			border: 1px dotted #333;
+			margin: 0 1em 1em 0;
+			height: 50px;
+		}
+		/** For visuelles moving */
+		.tilt.right {
+			transform: rotate(3deg);
+			-moz-transform: rotate(3deg);
+			-webkit-transform: rotate(3deg);
+		}
+		.tilt.left {
+			transform: rotate(-3deg);
+			-moz-transform: rotate(-3deg);
+			-webkit-transform: rotate(-3deg);
+		}
+	</style>
+</head>
+<body>
+<div class="main">
+	<div class="column">
+	  <div class="portlet curiosity">
+		<div class="portlet-header">
+		  <svg xmlns="http://w3.org/2000/svg" viewBox="0 0 150 25">
+			<text x="0" y="20">🔍 Curiosity</text>
+		  </svg>
+		  <!--<i class="em em-mag" aria-role="presentation" aria-label="MAG"></i> Curiosity-->
+		</div>
+		<div class="portlet-content">I have plenty of things to investigate and to think about.</div>
+	  </div>
+	</div>
+
+	<div class="column">
+	  <div class="portlet acceptance">
+		<div class="portlet-header">
+		  <svg xmlns="http://w3.org/2000/svg" viewBox="0 0 150 25">
+			<text x="0" y="20">💯 Acceptance</text>
+		  </svg>
+		<!--<i class="em em-100" aria-role="presentation" aria-label="100"></i> Acceptance-->
+		</div>
+		<div class="portlet-content">The people around me approve of what I do and who I am.</div>
+	  </div>
+	</div>
+
+	<div class="column">
+	  <div class="portlet">
+		<div class="portlet-header">
+		  <svg xmlns="http://w3.org/2000/svg" viewBox="0 0 150 25">
+			<text x="0" y="20">💪 Power</text>
+		  </svg>
+		<!--<i class="em em-battery" aria-role="presentation" aria-label="BATTERY"></i> Power-->
+		</div>
+		<div class="portlet-content">There’s enough room for me to influence what happens around me.</div>
+	  </div>
+	</div>
+
+	<div class="column">
+	  <div class="portlet">
+		<div class="portlet-header">
+		  <svg xmlns="http://w3.org/2000/svg" viewBox="0 0 150 25">
+			<text x="0" y="20">👪 Relatedness</text>
+		  </svg>
+		<!--<i class="em em-man-girl-girl" aria-role="presentation" aria-label=""></i> Relatedness-->
+		</div>
+		<div class="portlet-content">I have good social contacts with the people in my work.</div>
+	  </div>
+	</div>
+
+	<div class="column">
+	  <div class="portlet">
+		<div class="portlet-header">
+		  <svg xmlns="http://w3.org/2000/svg" viewBox="0 0 150 25">
+			<text x="0" y="20">🏁 Goal</text>
+		  </svg>
+		<!--<i class="em em-goal_net" aria-role="presentation" aria-label="GOAL NET"></i> Goal-->
+		</div>
+		<div class="portlet-content">My purpose in life is reflected in the work that I do.</div>
+	  </div>
+	</div>
+
+	<div class="column">
+	  <div class="portlet">
+		<div class="portlet-header">
+		  <svg xmlns="http://w3.org/2000/svg" viewBox="0 0 150 25">
+			<text x="0" y="20">🥇 Honor</text>
+		  </svg>
+		<!--<i class="em em-medal" aria-role="presentation" aria-label="MEDAL"></i> Honor-->
+		</div>
+		<div class="portlet-content">I feel proud that my personal values are reflected in how I work.</div>
+	  </div>
+	</div>
+
+	<div class="column">
+	  <div class="portlet">
+		<div class="portlet-header">
+		  <svg xmlns="http://w3.org/2000/svg" viewBox="0 0 150 25">
+			<text x="0" y="20">👌 Mastery</text>
+		  </svg>
+		<!--<i class="em em-clap" aria-role="presentation" aria-label="CLAP"></i> Mastery-->
+		</div>
+		<div class="portlet-content">My work challenges my competence but it is still within my abilities.</div>
+	  </div>
+	</div>
+
+	<div class="column">
+	  <div class="portlet">
+		<div class="portlet-header">
+		  <svg xmlns="http://w3.org/2000/svg" viewBox="0 0 150 25">
+			<text x="0" y="20">🗽 Freedom</text>
+		  </svg>
+		<!--<i class="em em-peace_symbol" aria-role="presentation" aria-label=""></i> Freedom-->
+		</div>
+		<div class="portlet-content">I am independent of others with my work and my responsibilities.</div>
+	  </div>
+	</div>
+
+	<div class="column">
+	  <div class="portlet">
+		<div class="portlet-header">
+		  <svg xmlns="http://w3.org/2000/svg" viewBox="0 0 150 25">
+			<text x="0" y="20">📁 Order</text>
+		  </svg>
+		<!--<i class="em em-file_cabinet" aria-role="presentation" aria-label=""></i> Order-->
+		</div>
+		<div class="portlet-content">There are enough rules and policies for a stable environment.</div>
+	  </div>
+	</div>
+
+	<div class="column">
+	  <div class="portlet">
+		<div class="portlet-header">
+		  <svg xmlns="http://w3.org/2000/svg" viewBox="0 0 150 25">
+			<text x="0" y="20">🔝 Status</text>
+		  </svg>
+		  <!--<i class="em em-top" aria-role="presentation" aria-label="TOP WITH UPWARDS ARROW ABOVE"></i> Status-->
+		</div>
+		<div class="portlet-content">My position is good, and recognized by the people who work with me.</div>
+	  </div>
+	</div>
+</div>
+
+<script
+  src="http://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function ($) {
+		function tilt_direction(item) {
+			var left_pos = item.position().left,
+				move_handler = function (e) {
+					if (e.pageX >= left_pos) {
+						item.addClass("right");
+						item.removeClass("left");
+					} else {
+						item.addClass("left");
+						item.removeClass("right");
+					}
+					left_pos = e.pageX;
+				};
+			$("html").bind("mousemove", move_handler);
+			item.data("move_handler", move_handler);
+		}  
+
+		$( ".column" ).sortable({
+			connectWith: ".column",
+			handle: ".portlet-header",
+			cancel: ".portlet-toggle",
+			start: function (event, ui) {
+				ui.item.addClass('tilt');
+				tilt_direction(ui.item);
+			},
+			stop: function (event, ui) {
+				ui.item.removeClass("tilt");
+				$("html").unbind('mousemove', ui.item.data("move_handler"));
+				ui.item.removeData("move_handler");
+			}
+		});
+		
+		$( ".portlet" )
+			.addClass( "ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" )
+			.find( ".portlet-header" )
+			.addClass( "ui-widget-header ui-corner-all" )
+			.prepend( "<span class='ui-icon ui-icon-minusthick portlet-toggle'></span>");
+
+		$( ".portlet-toggle" ).click(function() {
+			var icon = $( this );
+			icon.toggleClass( "ui-icon-minusthick ui-icon-plusthick" );
+			icon.closest( ".portlet" ).find( ".portlet-content" ).toggle();
+		});
+	});
+</script>
+</body>
+</html>
