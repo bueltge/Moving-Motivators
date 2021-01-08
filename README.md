@@ -5,7 +5,7 @@ Moving Motivators is an exercise meant to help us reflect on motivation and how 
 ---
 
 ### Screenshots
-[Screenshot](./mm.png)
+![Screenshot](./mm.png)
 
 ---
 
