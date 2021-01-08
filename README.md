@@ -4,6 +4,11 @@ Moving Motivators is an exercise meant to help us reflect on motivation and how 
 
 ---
 
+### Screenshots
+[Screenshot](./mm.png)
+
+---
+
 What do you do when you need to make a decision? How do you know what makes your new hire tick? How do you know what gets under your skin?
 
 One of the easiest and most fun ways to delve into your intrinsic motivations is to play Moving Motivators! I use the cards personally, and also I use them in each talk with employees, feedback talks, and applicants. I often work in the remote world, and playing paper cards is not the right choice. So I created this simple version for usage inside the browser - and it works, since tons of talks.
