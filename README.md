@@ -7,8 +7,6 @@ Moving Motivators is an exercise to help us reflect on motivation and how it aff
 ### Screenshot
 ![Screenshot](./mm.png)
 
----
-
 ## Why?
 
 What do you do when you need to make a decision? How do you know what makes your new hire tick? How do you know what gets under your skin?
