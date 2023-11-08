@@ -16,7 +16,8 @@ One of the easiest and fun ways to delve into your intrinsic motivations is to p
 The cards are a helping tool from the [management 3.0](https://management30.com/) idea. Management 3.0 is an ever-changing collection of games, tools, and practices to help any worker manage the organization. It is a way of looking at work systems.
 
 ## Online Usage, Demo
-[bueltge.de/moving-motivators/](https://bueltge.de/moving-motivators/)
+My webspace [bueltge.de/moving-motivators/](https://bueltge.de/moving-motivators/)
+Via GitHub Deploy [bueltge.github.io/Moving-Motivators/](https://bueltge.github.io/Moving-Motivators/)
 
 ## License
 
